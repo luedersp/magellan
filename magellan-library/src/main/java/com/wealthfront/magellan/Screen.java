@@ -34,7 +34,7 @@ import static com.wealthfront.magellan.Preconditions.checkState;
  * }
  * </code> </pre>
  */
-public abstract class Screen<V extends ViewGroup & ScreenView> implements BackHandler {
+public abstract class Screen<V extends ViewGroup & ScreenView> extends BaseObservable implements BackHandler {
 
   public static final int DEFAULT_ACTION_BAR_COLOR_RES = 0;
   private static final String VIEW_STATE = "com.wealthfront.navigation.Screen.viewState";
